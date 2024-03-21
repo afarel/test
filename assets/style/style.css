@@ -1,0 +1,163 @@
+
+nav, a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    object-position: center;
+    
+}
+
+.featured-image {
+    width: 200px;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+header{
+    display: inline;
+}
+
+body{
+    font-family: 'lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.card{
+    
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 30px;
+        margin-top: 20px;
+        
+}
+
+.jumbotron {
+    font-size: 25px;
+    padding: 30px;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    color: white;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 1.5rem;
+    
+}
+
+.profile header {
+    text-align: center;
+    
+}
+
+.profile img {
+    width: 200px;
+}
+
+nav {
+    position: sticky;
+    background-color: rgb(177, 0, 0);
+    padding: 5px;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    padding-inline: 2rem;
+    gap: 5px;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem ;
+}
+
+aside{
+    flex: 1;
+    
+}
+
+nav a:hover{
+    font-weight: bold;
+}
+
+nav li{
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+div a{
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+div img{
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+footer{
+    padding: 15px;
+    text-align: left;
+    color: red;
+    margin: 15px;
+}
+
+.referensi a:link{
+    color: rgb(4, 153, 153);
+}
+.referensi a:visited{
+    color: rgb(4, 153, 153);
+}
+
+.referensi a:hover {
+    color: red;
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+    main{
+        flex-flow: column wrap;
+    }
+    main aside {
+        align-self: center; 
+    }
+}
+
+
+@media screen and (max-width: 780px){
+    nav ul{
+        justify-content: center;
+    } main aside {
+        align-self: stretch;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }   
+}
+
+@media screen and (max-width: 481px) {
+    .nav_list {
+    flex-direction: column;
+    } 
+}
