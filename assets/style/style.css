@@ -9,8 +9,8 @@ nav, a {
 }
 
 .featured-image {
-    width: 200px;
-    max-height: 400px;
+    width: 148px;
+    max-height: 200px;
     object-fit: cover;
     object-position: center;
 }
@@ -144,7 +144,7 @@ footer{
     nav ul{
         justify-content: center;
     } main aside {
-        align-self: stretch;
+        align-self: center;
     }
 }
 
@@ -156,8 +156,3 @@ footer{
     }   
 }
 
-@media screen and (max-width: 481px) {
-    .nav_list {
-    flex-direction: column;
-    } 
-}
